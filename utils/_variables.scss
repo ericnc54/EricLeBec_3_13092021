@@ -1,3 +1,12 @@
 $primary-color: #9356DC;
 $secondary-color: #FF79DA;
 $third-color: #99E2D0;
+$light-grey: #F6F6F6;
+$grey: #eaeaea;
+$middle-grey: rgba(53,53,53,0.5);
+$dark-grey: #353535;
+$gradient: $primary-color, $secondary-color;
+$mob: "only screen and (max-width: 760px)";
+$tab: "only screen and (min-width: 761px)";
+$tabgrand: "only screen and (min-width: 900px)";
+$screen: "only screen and (min-width: 1200px)";

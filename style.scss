@@ -1,3 +1,13 @@
 @import "./utils/variables";
+@import "./utils/mixins";
+@import "./utils/animations";
+@import "./base/loader";
 @import "./base/bases";
 @import "./base/typography";
+@import "./components/button";
+@import "./components/card";
+@import "./layouts/menu";
+@import "./layouts/location";
+@import "./layouts/reservation";
+@import "./layouts/fonction";
+@import "./layouts/footer";

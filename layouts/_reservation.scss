@@ -1,0 +1,19 @@
+.reservation {
+    padding: 3vh 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $light-grey;
+    text-align: center;
+    &__p {
+        padding: 1vh;
+        width: 85%;
+        font-size: 1.7em;
+    }
+    &__h1 {
+        padding: 1vh 0;
+        width: 65%;
+        font-size: 2.3em;
+    }    
+}

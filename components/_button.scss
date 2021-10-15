@@ -1,0 +1,47 @@
+.button{
+    margin: 4vh 0;
+    padding: 17px 23px;
+    font-size: 1.7em;
+    border-radius: 27px;
+    color: white;
+    @include shadow;
+    text-align: center;
+    @include gradient;   
+    &:hover {
+        background: linear-gradient(
+          356deg,
+          lighten($primary-color, 4%) 0%,
+          lighten($secondary-color, 4%) 100%
+        );
+        @include shadow ($dark-grey);    
+    }
+}
+.button__fonction {
+    display: flex;
+    margin: 2vh 1vw 2vh 3vw;
+    padding: 20px 10px;
+    font-size: 1.6em;
+    border-radius: 20px;
+    text-align: center;
+    background-color: $light-grey;
+    @include shadow;
+    &--violet {
+        background-color: lighten($primary-color, 32%);
+    }
+}
+@media #{$tab} {
+    .button__fonction {
+        width: 43%;
+        margin: 2vh 3vw 2vh 3vw;
+    }
+}
+@media #{$tabgrand} {
+    .button__fonction {
+        width: 40%;
+    }
+}
+@media #{$screen} {
+    .button__fonction {
+        width: 25%;
+    }
+}

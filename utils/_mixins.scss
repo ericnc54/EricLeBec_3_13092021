@@ -1,0 +1,6 @@
+@mixin gradient ($direction : 356deg, $color : $gradient) {
+    background: linear-gradient($direction, $color);    
+}
+@mixin shadow ($color : $middle-grey) {
+    box-shadow: 5px 5px 15px -3px $color;
+}

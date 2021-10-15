@@ -14,14 +14,118 @@
 		<link rel="shortcut icon" type="image/jpg" href="picture/ohmyfood_favicon.svg"/>
 	</head>
 	<body>
+		<div class=loader>
+			<p class=loader__p>ohmyfood ...</p>
+		</div>
 		<header>
-		<div class="menu">mqjfksdjljfmksq</div>	
+			<div class="menuindex">
+				<img src="./picture/ohmyfood.png" alt="logo">
+			</div>
 		</header>
-		<section>
-			
+		<section class="outils">
+			<div class="location">
+			<span><i class="fas fa-map-marker-alt fa-lg"></i>
+			</span>
+			<h4>Paris, Belleville</h4>
+			</div>		
+			<div class="reservation">
+				<h1 class="accueil reservation__h1">
+					Réservez le menu qui vous convient
+				</h1>
+				<p class="reservation__p">
+					Découvrez des restaurants d'exception, sélectionnés par nos soins.
+				</p>
+				<div class="button">
+					<p>Explorez nos restaurants</p>
+				</div>
+			</div>
+			<div class="fonction">
+				<h2 class="fonction__h2">
+					Fonctionnement
+				</h2>
+				<div class="button__fonction">
+					<p class="fonction__chiffre">1</p>
+					<span class="fonction__i"><i class="fas fa-mobile-alt fa-lg"></i></span>
+					<p class="fonction__p">Choisissez un restaurant</p>
+				</div>
+				<div class="button__fonction">
+					<p class="fonction__chiffre">2</p>
+					<span class="fonction__i"><i class="fas fa-list-ul fa-sm"></i></span>
+					<p class="fonction__p">Composez votre menu</p>
+				</div>
+				<div class="button__fonction button__fonction--violet">
+					<p class="fonction__chiffre">3</p>
+					<span class="fonction__i--violet"><i class="fas fa-store fa-sm"></i></span>
+					<p class="fonction__p">Dégustez au restaurant</p>
+				</div>
+			</div>
 		</section>
-		<footer>
-			
-		</footer>		
+		<main>
+			<section class="cards">
+				<h2>Restaurants</h2>
+				<a href="gout.html">
+					<article class="card card__new">
+						<img class="bottom" src="picture/gout.webp" alt="La palette du goût">
+						<div class="heart">
+							<div>
+								<h4>La palette du goût</h4>
+								<p>Ménilmontant</p>
+							</div>
+							<i class="far fa-heart fa-2x"></i>
+					</article>
+				</a>
+				<a href="note.html">
+					<article class="card card__new">
+						<img class="top" src="picture/note.webp" alt="La note enchanté">
+						<div class="heart">
+							<div>
+								<h4>La note enchanté</h4>
+								<p>Charonne</p>
+							</div>
+							<i class="far fa-heart fa-2x"></i>
+					</article>
+				</a>
+				<a href="francaise.html">
+					<article class="card">
+						<img class="bottom" src="picture/francaise.webp" alt="À la française">
+						<div class="heart">
+							<div>
+								<h4>À la française</h4>
+								<p>Cité Rouge</p>
+							</div>
+							<i class="far fa-heart fa-2x"></i>
+					</article>
+				</a>
+				<a href="sens.html">
+					<article class="card">
+						<img class="bottom" src="picture/sens.webp" alt="Le délice des sens">
+						<div class="heart">
+							<div>
+								<h4>Le délice des sens</h4>
+								<p>Folie-Méricourt</p>
+							</div>
+							<i class="far fa-heart fa-2x"></i>
+						</div>
+					</article>
+				</a>
+			</section>
+		</main>
+		<footer>			
+			<img class="footerlogo" src="./picture/ohmyfood@2x.svg" alt="logo">			
+			<div class="footertexte">
+				<div class="footeroutils">
+					<div class="footeroutils__i"><i class="fas fa-utensils fa-lg"></i></div>
+					<h4 class="footeroutils__h4">Proposer un restaurant</h4>
+				</div>
+				<div class="footeroutils">
+					<div class="footeroutils__i footeroutils__i__main"><i class="fas fa-hands-helping fa-lg"></i></i></div>
+					<h4 class="footeroutils__h4">Devenir Partenaire</h4>
+				</div>
+				<div class="footerlegal">
+					<p class="footerlegal__p">Mentions légales</p>
+					<a class="footerlegal__mail" href="mailto: exemple@email.com">Contact</a>
+				</div>
+			</div>			
+		</footer>	
 	</body>
 </html>

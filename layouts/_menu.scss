@@ -1,0 +1,40 @@
+.menu {
+    display: flex;
+    width: 100%;
+}
+.menu div {
+    margin-top: 3vw;
+    display: flex;
+    flex-grow: 2;
+    justify-content: center;
+}
+.menu img {
+    object-fit: contain;
+    padding: 2vh 0;
+    width: 40vw;
+    max-width: 400px;
+}
+.menu a {
+    z-index: 1;
+    margin-top: 3vw;
+    margin-right: -13vw;
+    margin-left: 8vw;
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+}
+.menu svg {
+    max-width: 50px;
+    width: 5vw;
+    color: black;
+}
+.menuindex {
+    margin-top: 3vw;
+    display: flex;
+    justify-content: center;
+}
+.menuindex img {
+    padding: 2vh 0;
+    width: 40vw;
+    max-width: 400px; 
+}

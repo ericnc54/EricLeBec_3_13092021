@@ -1,0 +1,26 @@
+.loader {
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: $dark-grey; 
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;  
+    animation: scale-out-center 0.5s 2.5s both;
+  }
+.loader__p {
+    position: relative;
+    margin: auto;
+    top: 45vh;
+    width: 100%;
+    text-align: center;
+    font-family: 'Shrikhand', cursive;
+    font-size: 5vh;
+    background: linear-gradient(to right, $primary-color 20%, $secondary-color 40%, $third-color 60%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    opacity: .75;
+    animation: pulse 2.5s linear infinite;
+}
