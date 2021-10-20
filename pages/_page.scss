@@ -53,7 +53,7 @@ hr {
     @include shadow;
     &__p {
         display: flex;
-        justify-content: space-between;   
+        justify-content: space-between;
         font-size: 1.4em;
         white-space: nowrap;
         text-overflow: ellipsis;
@@ -68,14 +68,14 @@ hr {
         & + .menucoche {
             animation: slide-in-right 0.8s ease-in-out both;
             //animation: slide-in-right 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+            & + .iconemenu  {
+                transform: rotate(360deg);
             }
-        & > .iconemenu  {
-            animation: rotate 0.8s ease-in-out both;
-        }       
+        }
     }
 }
 .iconemenu {
-    display: inline-block;    
+    transition: 600ms ease-in-out 200ms;
 }
 .h4__page {
     white-space: nowrap;

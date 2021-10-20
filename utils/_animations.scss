@@ -34,3 +34,29 @@
     opacity: 0;
   }
 }
+@keyframes slide-in-right {
+  0% {
+    transform: scaleX(0) translateX(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scaleX(1) translateX(-17vw);
+    opacity: 1;
+  }
+}
+@keyframes marge {
+  0% {
+    margin-right: 0vw;
+  }
+  100% {
+    margin-right: 14vw;
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
