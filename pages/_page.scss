@@ -1,24 +1,36 @@
 .background {
     background-color: $grey;
     overflow: hidden;
+    padding-bottom: 3vh;
 }
 .pagemaintitre {
     display: flex;
     position: relative;
     justify-content: space-between;
     margin-top: -8vh;
-    padding: 4vh 5vw 2vh 5vw;
+    padding: 4vh 7vw 2vh 7vw;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
     background-color: $grey;
 }
 .pagemenu {
     display: flex;
-    flex-direction: column;
-    margin-left: 5vw;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-left: 7vw;
     margin-right: 5vw;
-    //background-color: $grey;
-    //padding: 0vh 5vw 4vh 5vw;
+}
+.entree {
+    width: 30%;
+    min-width: 390px;
+}
+.plat {
+    width: 30%;
+    min-width: 390px;
+}
+.dessert {
+    width: 30%;
+    min-width: 390px;
 }
 .h2__page {
     font-weight: normal;
@@ -28,73 +40,83 @@
 }
 hr {
     margin: 0;
-    width: 12vw;
+    width: 12%;
     height: 3px;
     background-color: $third-color;
     border: none;
 }
 .h4__page {
-    font-size: 1.8em;
+    font-size: 2em;
     padding-bottom: 0.7vh;
 }
 .containermenu {
-    display: flex;
+    display: flex;    
+    padding-right: 2vw;
 }
-.menudetail {
+.menudetail__p {
     display: flex;
     justify-content: space-between;
-    flex-direction: column;
-    width: 100%;
-    margin-top: 2vh;
-    margin-bottom: 2vh;
+    font-size: 1.6em;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    padding-right: 15px;    
+}
+.menudetail__prix {
+    font-weight: bold;
+}
+.menudetail {
+    width: 90vw;
+    max-width: 390px;
+    margin-top: 25px;
+    margin-bottom: 25px;
     padding: 15px 10px 15px 10px;
     background-color: white;
     border-radius: 10px;
-    @include shadow;
-    &__p {
-        display: flex;
-        justify-content: space-between;
-        font-size: 1.4em;
-        white-space: nowrap;
-        text-overflow: ellipsis;
-        padding-right: 15px;
-    }
-    &__prix {
-        font-weight: bold;
-    }
-    &:hover {
-        animation: marge 0.8s ease-in-out both;
-        //animation: marge 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+    @include shadow;    
+    &:hover {        
+        //animation: pad 0.4s ease-in-out both;
+        animation: pad 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
         & + .menucoche {
-            animation: slide-in-right 0.8s ease-in-out both;
-            //animation: slide-in-right 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
-            & + .iconemenu  {
-                transform: rotate(360deg);
-            }
+            //opacity: 1;
+            //transform: translateX(-15vw);
+            //animation: slide-in-right 0.8s ease-in-out both;
+            animation: slide-in-right 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.975) both;            
         }
+        //& + .menudetail__p {
+           //transform: translateX(-11vw)
+        //}
+        //& + .fa-check-circle {
+            //animation: tourne 0.8s ease-in-out both;
+            //transform: rotate(180deg);
+        //}
     }
 }
-.iconemenu {
-    transition: 600ms ease-in-out 200ms;
-}
+//.fa-check-circle {
+    //transform: rotate(0deg);
+    //transition: transform 0.8S ease-in-out;
+//}
 .h4__page {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;    
 }
 .menucoche {
-    opacity: 0;
-    margin-top: 2vh;
-    margin-bottom: 2vh;
-    margin-right: -18vw;
+    opacity: 0; 
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-right: -60px;
     font-size: 2.3em;    
     background-color: $third-color;
     color: white;   
-    padding: 26px 20px;
+    padding: 27px 20px;
     border-bottom-right-radius: 10px;
-    border-top-right-radius: 10px;
-    @include shadow;
+    border-top-right-radius: 10px;  
 }
-
-
-
+@media #{$mobgrand} {
+    .pagemaintitre {
+        justify-content: start;
+    }
+    .pagemenu__h1 {
+        margin-right: 9vw;
+    }
+}

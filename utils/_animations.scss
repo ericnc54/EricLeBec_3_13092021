@@ -36,27 +36,35 @@
 }
 @keyframes slide-in-right {
   0% {
-    transform: scaleX(0) translateX(0);
+    transform: translateX(0);
     opacity: 0;
   }
   100% {
-    transform: scaleX(1) translateX(-17vw);
+    transform: translateX(-60px);
     opacity: 1;
   }
 }
-@keyframes marge {
+@keyframes pad {
   0% {
-    margin-right: 0vw;
+    padding-right: 0px;
   }
   100% {
-    margin-right: 14vw;
+    padding-right: 60px;
   }
 }
-@keyframes rotate {
+@keyframes tourne {
   0% {
     transform: rotate(0deg);
   }
   100% {
-    transform: rotate(360deg);
+    transform: rotate(180deg);
+  }
+}
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }

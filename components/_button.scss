@@ -40,11 +40,15 @@
         width: 43%;
         margin: 2vh 3vw 2vh 3vw;
     }
+    .button__page {
+        margin: auto;
+        height: fit-content;
+    }
 }
 @media #{$tabgrand} {
     .button__fonction {
         width: 40%;
-    }
+    }    
 }
 @media #{$screen} {
     .button__fonction {

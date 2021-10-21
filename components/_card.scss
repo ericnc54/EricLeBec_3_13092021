@@ -65,7 +65,7 @@
     padding-right: 35px;
     &__page { 
         position: relative;
-        top: 4px;
+        //top: 4px;
         &::before {
             position: absolute;
             right: 35px;
@@ -139,14 +139,33 @@ a {
         margin-right: 80%;
     }
 }
+@media #{$mobgrand} {
+    .bottom__page {
+        height: 40vh;
+        object-fit: cover;
+        object-position: 0% 80%;
+    }
+    .top__page {
+        height: 40vh;
+        object-position: 0% 65%;
+    }
+}
 @media #{$screen} {
     .card {
         width: 20vw;
     }
     .bottom {
-        height: 12vw;
-    }
+        height: 12vw;        
+    }  
     .top {
         height: 12vw;
+    }
+    .bottom__page {
+        height: 70vh;
+        object-position: 0% 90%;
+    }
+    .top__page {
+        height: 70vh;
+        object-position: 0% 65%;
     }
 }
