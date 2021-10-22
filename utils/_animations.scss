@@ -44,20 +44,57 @@
     opacity: 1;
   }
 }
+@keyframes slideinverse {
+  0% {
+    transform: translateX(-60);
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 0;
+  }
+}
 @keyframes pad {
   0% {
     padding-right: 0px;
   }
   100% {
-    padding-right: 60px;
+    padding-right: 70px;
   }
 }
-@keyframes tourne {
+@keyframes padinverse {
+  0% {
+    padding-right: 60px;
+  }
+  100% {
+    padding-right: 0px;
+  }
+}
+@keyframes marge {
+  0% {
+    margin-right: 0px;
+  }
+  100% {
+    margin-right: 60px;
+  }
+}
+@keyframes margeinverse {
+  0% {
+    margin-right: 60px;
+  }
+  100% {
+    margin-right: 0px;
+  }
+}
+@keyframes fa-spin {
   0% {
     transform: rotate(0deg);
   }
   100% {
-    transform: rotate(180deg);
+    transform: rotate(360deg);
   }
 }
 @keyframes opacity {
@@ -66,5 +103,13 @@
   }
   100% {
     opacity: 1;
+  }
+}
+@keyframes opacityinverse {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }

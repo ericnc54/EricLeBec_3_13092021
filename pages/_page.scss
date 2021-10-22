@@ -46,71 +46,70 @@ hr {
     border: none;
 }
 .h4__page {
-    font-size: 2em;
+    font-size: 1.9em;
     padding-bottom: 0.7vh;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; 
 }
 .containermenu {
+    opacity: 0;
     display: flex;    
     padding-right: 2vw;
+    overflow: hidden;
+    width: 86vw;
+    max-width: 390px;
+    //height: 80px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-right: 25px;
+    background-color: white;
+    border-radius: 15px;
+    @include shadow;
+    animation: opacity $anim-dur forwards;
+    @for $i from 1 to 10 {
+        &--#{$i} {
+            animation-delay: $anim-delay * $i;
+        }        
+    }    
 }
-.menudetail__p {
+.menudetail__p {    
     display: flex;
     justify-content: space-between;
-    font-size: 1.6em;
+    font-size: 1.4em;
     white-space: nowrap;
-    text-overflow: ellipsis;
-    padding-right: 15px;    
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    padding-right: 15px;        
 }
 .menudetail__prix {
     font-weight: bold;
 }
-.menudetail {
-    width: 90vw;
-    max-width: 390px;
-    margin-top: 25px;
-    margin-bottom: 25px;
-    padding: 15px 10px 15px 10px;
-    background-color: white;
-    border-radius: 10px;
-    @include shadow;    
-    &:hover {        
-        //animation: pad 0.4s ease-in-out both;
-        animation: pad 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+.menudetail {    
+    width: 86vw;
+    max-width: 390px;    
+    padding: 10px;
+    background-color: white;   
+    animation: padinverse 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;    
+    &:hover { 
+        animation: pad 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;              
         & + .menucoche {
-            //opacity: 1;
-            //transform: translateX(-15vw);
-            //animation: slide-in-right 0.8s ease-in-out both;
-            animation: slide-in-right 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.975) both;            
-        }
-        //& + .menudetail__p {
-           //transform: translateX(-11vw)
-        //}
-        //& + .fa-check-circle {
-            //animation: tourne 0.8s ease-in-out both;
-            //transform: rotate(180deg);
-        //}
+            transform: translateX(-60px);
+            & > .fa-check-circle {
+                animation: fa-spin 0.5s linear forwards;
+            }
+        }        
     }
 }
-//.fa-check-circle {
-    //transform: rotate(0deg);
-    //transition: transform 0.8S ease-in-out;
-//}
-.h4__page {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;    
-}
 .menucoche {
-    opacity: 0; 
-    margin-top: 25px;
-    margin-bottom: 25px;
-    margin-right: -60px;
+    margin-right: -116px;
     font-size: 2.3em;    
     background-color: $third-color;
     color: white;   
-    padding: 27px 20px;
-    border-bottom-right-radius: 10px;
-    border-top-right-radius: 10px;  
+    padding: 20px;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    transition: transform 0.5s ease-in-out;     
 }
 @media #{$mobgrand} {
     .pagemaintitre {

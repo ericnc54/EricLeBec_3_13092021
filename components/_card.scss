@@ -61,11 +61,10 @@
     }
 }
 .fa-heart {
-    padding-top: 1vh;
+    padding-top: 15px;
     padding-right: 35px;
     &__page { 
         position: relative;
-        //top: 4px;
         &::before {
             position: absolute;
             right: 35px;

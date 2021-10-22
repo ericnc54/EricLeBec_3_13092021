@@ -117,12 +117,44 @@
   }
 }
 
+@-webkit-keyframes slideinverse {
+  0% {
+    -webkit-transform: translateX(-60);
+            transform: translateX(-60);
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 0;
+  }
+}
+
+@keyframes slideinverse {
+  0% {
+    -webkit-transform: translateX(-60);
+            transform: translateX(-60);
+    opacity: 1;
+  }
+  25% {
+    opacity: 0;
+  }
+  100% {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    opacity: 0;
+  }
+}
+
 @-webkit-keyframes pad {
   0% {
     padding-right: 0px;
   }
   100% {
-    padding-right: 60px;
+    padding-right: 70px;
   }
 }
 
@@ -131,29 +163,83 @@
     padding-right: 0px;
   }
   100% {
+    padding-right: 70px;
+  }
+}
+
+@-webkit-keyframes padinverse {
+  0% {
     padding-right: 60px;
   }
+  100% {
+    padding-right: 0px;
+  }
 }
 
-@-webkit-keyframes tourne {
+@keyframes padinverse {
+  0% {
+    padding-right: 60px;
+  }
+  100% {
+    padding-right: 0px;
+  }
+}
+
+@-webkit-keyframes marge {
+  0% {
+    margin-right: 0px;
+  }
+  100% {
+    margin-right: 60px;
+  }
+}
+
+@keyframes marge {
+  0% {
+    margin-right: 0px;
+  }
+  100% {
+    margin-right: 60px;
+  }
+}
+
+@-webkit-keyframes margeinverse {
+  0% {
+    margin-right: 60px;
+  }
+  100% {
+    margin-right: 0px;
+  }
+}
+
+@keyframes margeinverse {
+  0% {
+    margin-right: 60px;
+  }
+  100% {
+    margin-right: 0px;
+  }
+}
+
+@-webkit-keyframes fa-spin {
   0% {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(180deg);
-            transform: rotate(180deg);
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
   }
 }
 
-@keyframes tourne {
+@keyframes fa-spin {
   0% {
     -webkit-transform: rotate(0deg);
             transform: rotate(0deg);
   }
   100% {
-    -webkit-transform: rotate(180deg);
-            transform: rotate(180deg);
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
   }
 }
 
@@ -172,6 +258,24 @@
   }
   100% {
     opacity: 1;
+  }
+}
+
+@-webkit-keyframes opacityinverse {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes opacityinverse {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
 
@@ -405,7 +509,7 @@ p {
 }
 
 .fa-heart {
-  padding-top: 1vh;
+  padding-top: 15px;
   padding-right: 35px;
 }
 
@@ -908,15 +1012,76 @@ hr {
 }
 
 .h4__page {
-  font-size: 2em;
+  font-size: 1.9em;
   padding-bottom: 0.7vh;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .containermenu {
+  opacity: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding-right: 2vw;
+  overflow: hidden;
+  width: 86vw;
+  max-width: 390px;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  margin-right: 25px;
+  background-color: white;
+  border-radius: 15px;
+  -webkit-box-shadow: 5px 5px 15px -3px rgba(53, 53, 53, 0.3);
+          box-shadow: 5px 5px 15px -3px rgba(53, 53, 53, 0.3);
+  -webkit-animation: opacity 6000ms forwards;
+          animation: opacity 6000ms forwards;
+}
+
+.containermenu--1 {
+  -webkit-animation-delay: 600ms;
+          animation-delay: 600ms;
+}
+
+.containermenu--2 {
+  -webkit-animation-delay: 1200ms;
+          animation-delay: 1200ms;
+}
+
+.containermenu--3 {
+  -webkit-animation-delay: 1800ms;
+          animation-delay: 1800ms;
+}
+
+.containermenu--4 {
+  -webkit-animation-delay: 2400ms;
+          animation-delay: 2400ms;
+}
+
+.containermenu--5 {
+  -webkit-animation-delay: 3000ms;
+          animation-delay: 3000ms;
+}
+
+.containermenu--6 {
+  -webkit-animation-delay: 3600ms;
+          animation-delay: 3600ms;
+}
+
+.containermenu--7 {
+  -webkit-animation-delay: 4200ms;
+          animation-delay: 4200ms;
+}
+
+.containermenu--8 {
+  -webkit-animation-delay: 4800ms;
+          animation-delay: 4800ms;
+}
+
+.containermenu--9 {
+  -webkit-animation-delay: 5400ms;
+          animation-delay: 5400ms;
 }
 
 .menudetail__p {
@@ -926,8 +1091,9 @@ hr {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  font-size: 1.6em;
+  font-size: 1.4em;
   white-space: nowrap;
+  overflow: hidden;
   text-overflow: ellipsis;
   padding-right: 15px;
 }
@@ -937,15 +1103,12 @@ hr {
 }
 
 .menudetail {
-  width: 90vw;
+  width: 86vw;
   max-width: 390px;
-  margin-top: 25px;
-  margin-bottom: 25px;
-  padding: 15px 10px 15px 10px;
+  padding: 10px;
   background-color: white;
-  border-radius: 10px;
-  -webkit-box-shadow: 5px 5px 15px -3px rgba(53, 53, 53, 0.3);
-          box-shadow: 5px 5px 15px -3px rgba(53, 53, 53, 0.3);
+  -webkit-animation: padinverse 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+          animation: padinverse 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
 }
 
 .menudetail:hover {
@@ -954,27 +1117,27 @@ hr {
 }
 
 .menudetail:hover + .menucoche {
-  -webkit-animation: slide-in-right 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.975) both;
-          animation: slide-in-right 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.975) both;
+  -webkit-transform: translateX(-60px);
+          transform: translateX(-60px);
 }
 
-.h4__page {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+.menudetail:hover + .menucoche > .fa-check-circle {
+  -webkit-animation: fa-spin 0.5s linear forwards;
+          animation: fa-spin 0.5s linear forwards;
 }
 
 .menucoche {
-  opacity: 0;
-  margin-top: 25px;
-  margin-bottom: 25px;
-  margin-right: -60px;
+  margin-right: -116px;
   font-size: 2.3em;
   background-color: #99E2D0;
   color: white;
-  padding: 27px 20px;
-  border-bottom-right-radius: 10px;
-  border-top-right-radius: 10px;
+  padding: 20px;
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
+  -webkit-transition: -webkit-transform 0.5s ease-in-out;
+  transition: -webkit-transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out;
+  transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
 }
 
 @media only screen and (min-width: 460px) {
