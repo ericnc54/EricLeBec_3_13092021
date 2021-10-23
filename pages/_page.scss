@@ -70,6 +70,17 @@ hr {
         &--#{$i} {
             animation-delay: $anim-delay * $i;
         }        
+    }
+    &:hover { 
+        & > .menudetail {
+            animation: pad 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+        }              
+        & > .menucoche {
+            transform: translateX(-60px);
+            & > .fa-check-circle {
+                animation: fa-spin 0.5s linear forwards;
+            }
+        }        
     }    
 }
 .menudetail__detail {
@@ -91,16 +102,7 @@ hr {
     max-width: 390px;    
     padding: 10px;
     background-color: white;   
-    animation: padinverse 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;    
-    &:hover { 
-        animation: pad 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;              
-        & + .menucoche {
-            transform: translateX(-60px);
-            & > .fa-check-circle {
-                animation: fa-spin 0.5s linear forwards;
-            }
-        }        
-    }
+    animation: padinverse 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
 }
 .menucoche {
     margin-right: -116px;
@@ -119,4 +121,11 @@ hr {
     .pagemenu__h1 {
         margin-right: 9vw;
     }
+}
+@media #{$screengrand} {
+    .pagemenu {
+        margin-left: 7vw;
+        margin-right: 0vw;
+    }
+
 }

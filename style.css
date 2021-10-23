@@ -1099,6 +1099,21 @@ hr {
           animation-delay: 3000ms;
 }
 
+.containermenu:hover > .menudetail {
+  -webkit-animation: pad 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+          animation: pad 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+}
+
+.containermenu:hover > .menucoche {
+  -webkit-transform: translateX(-60px);
+          transform: translateX(-60px);
+}
+
+.containermenu:hover > .menucoche > .fa-check-circle {
+  -webkit-animation: fa-spin 0.5s linear forwards;
+          animation: fa-spin 0.5s linear forwards;
+}
+
 .menudetail__detail {
   white-space: nowrap;
   overflow: hidden;
@@ -1129,21 +1144,6 @@ hr {
           animation: padinverse 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
 }
 
-.menudetail:hover {
-  -webkit-animation: pad 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
-          animation: pad 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
-}
-
-.menudetail:hover + .menucoche {
-  -webkit-transform: translateX(-60px);
-          transform: translateX(-60px);
-}
-
-.menudetail:hover + .menucoche > .fa-check-circle {
-  -webkit-animation: fa-spin 0.5s linear forwards;
-          animation: fa-spin 0.5s linear forwards;
-}
-
 .menucoche {
   margin-right: -116px;
   font-size: 2.3em;
@@ -1166,6 +1166,13 @@ hr {
   }
   .pagemenu__h1 {
     margin-right: 9vw;
+  }
+}
+
+@media only screen and (min-width: 1800px) {
+  .pagemenu {
+    margin-left: 7vw;
+    margin-right: 0vw;
   }
 }
 /*# sourceMappingURL=style.css.map */
