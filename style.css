@@ -1094,6 +1094,11 @@ hr {
           animation-delay: 2700ms;
 }
 
+.containermenu--10 {
+  -webkit-animation-delay: 3000ms;
+          animation-delay: 3000ms;
+}
+
 .menudetail__detail {
   white-space: nowrap;
   overflow: hidden;
