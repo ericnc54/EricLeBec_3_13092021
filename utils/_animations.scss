@@ -62,7 +62,7 @@
     padding-right: 0px;
   }
   100% {
-    padding-right: 70px;
+    padding-right: 60px;
   }
 }
 @keyframes padinverse {
@@ -73,20 +73,20 @@
     padding-right: 0px;
   }
 }
-@keyframes marge {
+@keyframes padgauche {
   0% {
-    margin-right: 0px;
+    padding-left: 0px;
   }
   100% {
-    margin-right: 60px;
+    padding-left: 20px;
   }
 }
-@keyframes margeinverse {
+@keyframes padgaucheinverse {
   0% {
-    margin-right: 60px;
+    padding-left: 20px;
   }
   100% {
-    margin-right: 0px;
+    padding-left: 0px;
   }
 }
 @keyframes fa-spin {

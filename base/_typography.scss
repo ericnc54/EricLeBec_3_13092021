@@ -21,3 +21,8 @@ h2, .accueil {
 p {
     font-size: 1em;
 }
+@media #{$tab} {
+    .pagemenu__h1 {
+        font-size: 4em;
+    }
+}

@@ -154,7 +154,7 @@
     padding-right: 0px;
   }
   100% {
-    padding-right: 70px;
+    padding-right: 60px;
   }
 }
 
@@ -163,7 +163,7 @@
     padding-right: 0px;
   }
   100% {
-    padding-right: 70px;
+    padding-right: 60px;
   }
 }
 
@@ -185,39 +185,39 @@
   }
 }
 
-@-webkit-keyframes marge {
+@-webkit-keyframes padgauche {
   0% {
-    margin-right: 0px;
+    padding-left: 0px;
   }
   100% {
-    margin-right: 60px;
+    padding-left: 20px;
   }
 }
 
-@keyframes marge {
+@keyframes padgauche {
   0% {
-    margin-right: 0px;
+    padding-left: 0px;
   }
   100% {
-    margin-right: 60px;
+    padding-left: 20px;
   }
 }
 
-@-webkit-keyframes margeinverse {
+@-webkit-keyframes padgaucheinverse {
   0% {
-    margin-right: 60px;
+    padding-left: 20px;
   }
   100% {
-    margin-right: 0px;
+    padding-left: 0px;
   }
 }
 
-@keyframes margeinverse {
+@keyframes padgaucheinverse {
   0% {
-    margin-right: 60px;
+    padding-left: 20px;
   }
   100% {
-    margin-right: 0px;
+    padding-left: 0px;
   }
 }
 
@@ -357,6 +357,12 @@ h2, .accueil {
 
 p {
   font-size: 1em;
+}
+
+@media only screen and (min-width: 660px) {
+  .pagemenu__h1 {
+    font-size: 4em;
+  }
 }
 
 .button {
@@ -514,6 +520,7 @@ p {
 }
 
 .fa-heart__page {
+  padding-top: 11px;
   position: relative;
 }
 
@@ -585,6 +592,9 @@ a {
 }
 
 @media only screen and (min-width: 660px) {
+  .fa-heart__page {
+    padding-top: 22px;
+  }
   .cards {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -1035,53 +1045,59 @@ hr {
   border-radius: 15px;
   -webkit-box-shadow: 5px 5px 15px -3px rgba(53, 53, 53, 0.3);
           box-shadow: 5px 5px 15px -3px rgba(53, 53, 53, 0.3);
-  -webkit-animation: opacity 6000ms forwards;
-          animation: opacity 6000ms forwards;
+  -webkit-animation: opacity 3000ms forwards;
+          animation: opacity 3000ms forwards;
 }
 
 .containermenu--1 {
+  -webkit-animation-delay: 300ms;
+          animation-delay: 300ms;
+}
+
+.containermenu--2 {
   -webkit-animation-delay: 600ms;
           animation-delay: 600ms;
 }
 
-.containermenu--2 {
+.containermenu--3 {
+  -webkit-animation-delay: 900ms;
+          animation-delay: 900ms;
+}
+
+.containermenu--4 {
   -webkit-animation-delay: 1200ms;
           animation-delay: 1200ms;
 }
 
-.containermenu--3 {
+.containermenu--5 {
+  -webkit-animation-delay: 1500ms;
+          animation-delay: 1500ms;
+}
+
+.containermenu--6 {
   -webkit-animation-delay: 1800ms;
           animation-delay: 1800ms;
 }
 
-.containermenu--4 {
+.containermenu--7 {
+  -webkit-animation-delay: 2100ms;
+          animation-delay: 2100ms;
+}
+
+.containermenu--8 {
   -webkit-animation-delay: 2400ms;
           animation-delay: 2400ms;
 }
 
-.containermenu--5 {
-  -webkit-animation-delay: 3000ms;
-          animation-delay: 3000ms;
-}
-
-.containermenu--6 {
-  -webkit-animation-delay: 3600ms;
-          animation-delay: 3600ms;
-}
-
-.containermenu--7 {
-  -webkit-animation-delay: 4200ms;
-          animation-delay: 4200ms;
-}
-
-.containermenu--8 {
-  -webkit-animation-delay: 4800ms;
-          animation-delay: 4800ms;
-}
-
 .containermenu--9 {
-  -webkit-animation-delay: 5400ms;
-          animation-delay: 5400ms;
+  -webkit-animation-delay: 2700ms;
+          animation-delay: 2700ms;
+}
+
+.menudetail__detail {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .menudetail__p {
@@ -1092,9 +1108,6 @@ hr {
       -ms-flex-pack: justify;
           justify-content: space-between;
   font-size: 1.4em;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
   padding-right: 15px;
 }
 

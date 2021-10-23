@@ -63,7 +63,8 @@
 .fa-heart {
     padding-top: 15px;
     padding-right: 35px;
-    &__page { 
+    &__page {
+        padding-top: 11px;
         position: relative;
         &::before {
             position: absolute;
@@ -119,6 +120,9 @@ a {
     color: black;
 }
 @media #{$tab} {
+    .fa-heart__page {
+        padding-top: 22px;
+    }
     .cards {
         flex-direction: row;
         flex-wrap: wrap;
