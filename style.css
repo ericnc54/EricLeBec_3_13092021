@@ -292,8 +292,12 @@ p {
           box-shadow: 5px 5px 15px -3px rgba(53, 53, 53, 0.3);
 }
 
-.button__fonction--violet {
+.button__fonction:hover {
   background-color: #e9ddf8;
+}
+
+.button__fonction:hover > .fonction__i {
+  color: #9356DC;
 }
 
 @media only screen and (min-width: 660px) {
@@ -705,11 +709,6 @@ a {
 .fonction__i {
   color: rgba(53, 53, 53, 0.3);
   margin: auto -30px auto 20px;
-}
-
-.fonction__i--violet {
-  margin: auto -30px auto 20px;
-  color: #9356DC;
 }
 
 @media only screen and (min-width: 660px) {

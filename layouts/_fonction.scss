@@ -15,11 +15,7 @@
     }
     &__i {
         color: $middle-grey;
-        margin: auto -30px auto 20px;
-        &--violet {
-            margin: auto -30px auto 20px;
-            color: $primary-color;
-            }
+        margin: auto -30px auto 20px;       
     }
 }
 @media #{$tab} {

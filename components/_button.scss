@@ -31,8 +31,11 @@
     text-align: center;
     background-color: $light-grey;
     @include shadow;
-    &--violet {
+    &:hover {
         background-color: lighten($primary-color, 32%);
+        & >.fonction__i {
+            color: $primary-color;
+        }
     }
 }
 @media #{$tab} {
