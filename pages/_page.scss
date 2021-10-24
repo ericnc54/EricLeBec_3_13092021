@@ -63,7 +63,7 @@ hr {
     margin-bottom: 25px;
     margin-right: 25px;
     background-color: white;
-    border-radius: 15px;
+    border-radius: 15px;    
     @include shadow;
     animation: opacity $anim-dur forwards;
     @for $i from 1 through 10 {
@@ -101,7 +101,7 @@ hr {
     width: 86vw;
     max-width: 390px;    
     padding: 10px;
-    background-color: white;   
+    background-color: white;
     animation: padinverse 0.5s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
 }
 .menucoche {
@@ -110,8 +110,8 @@ hr {
     background-color: $third-color;
     color: white;   
     padding: 20px;
-    border-bottom-right-radius: 15px;
-    border-top-right-radius: 15px;
+    //border-bottom-right-radius: 15px;
+    //border-top-right-radius: 15px;        
     transition: transform 0.5s ease-in-out;     
 }
 @media #{$mobgrand} {
