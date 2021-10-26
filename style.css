@@ -152,18 +152,26 @@
 @-webkit-keyframes opacity {
   0% {
     opacity: 0;
+    -webkit-transform: translateY(15px);
+            transform: translateY(15px);
   }
   100% {
     opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
   }
 }
 
 @keyframes opacity {
   0% {
     opacity: 0;
+    -webkit-transform: translateY(15px);
+            transform: translateY(15px);
   }
   100% {
     opacity: 1;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
   }
 }
 
@@ -427,6 +435,7 @@ p {
 }
 
 .fa-heart__page {
+  right: -30px;
   padding-top: 11px;
   position: relative;
 }
@@ -515,6 +524,18 @@ a {
   }
   .card {
     width: 40vw;
+    -webkit-transition: -webkit-transform 0.5s ease-in-out;
+    transition: -webkit-transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+  }
+  .card:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+    -webkit-transition: -webkit-transform 0.5s ease-in-out;
+    transition: -webkit-transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
   }
   .bottom {
     height: 25vw;

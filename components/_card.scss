@@ -14,7 +14,7 @@
     background-color: white;
     border-radius: 15px;
     margin-bottom: 3vh;
-    @include shadow;
+    @include shadow;    
     &__new::after {
         color: darken($third-color, 35%);
         font-size: 1.5em;
@@ -28,7 +28,10 @@
         position: absolute;
         top: 0;
         right: 0;
-        background-color: $third-color;
+        background-color: $third-color;        
+    }
+    &:hover {
+        
     }
 }
 .bottom {
@@ -64,6 +67,7 @@
     padding-top: 15px;
     padding-right: 35px;
     &__page {
+        right: -30px;
         padding-top: 11px;
         position: relative;
         &::before {
@@ -131,6 +135,11 @@ a {
 
     .card {
         width: 40vw;
+        transition: transform 0.5s ease-in-out;
+        &:hover {
+            transform: scale(1.1);
+            transition: transform 0.5s ease-in-out;
+        }
     }
     .bottom {
         height: 25vw;
