@@ -15,7 +15,9 @@
     }
     &__i {
         color: $middle-grey;
-        margin: auto -30px auto 20px;       
+        margin: auto -30px auto 20px;
+        opacity: 1;
+        transition: 0.5s ease-in-out;       
     }
 }
 @media #{$tab} {

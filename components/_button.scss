@@ -7,6 +7,8 @@
     @include shadow;
     text-align: center;
     @include gradient;
+    opacity: 1;
+    transition: 0.5s ease-in-out;    
     &__page {
         width: 200px;
         margin-left: auto;
@@ -19,7 +21,9 @@
           lighten($primary-color, 4%) 0%,
           lighten($secondary-color, 4%) 100%
         );
-        @include shadow ($dark-grey);    
+        @include shadow ($dark-grey);
+        opacity: 1;
+        transition: 0.5s ease-in-out;   
     }
 }
 .button__fonction {
@@ -30,11 +34,17 @@
     border-radius: 20px;
     text-align: center;
     background-color: $light-grey;
+    opacity: 1;
+    transition: 0.5s ease-in-out;
     @include shadow;
     &:hover {
         background-color: lighten($primary-color, 32%);
+        opacity: 1;
+        transition: 0.5s ease-in-out;
         & >.fonction__i {
             color: $primary-color;
+            opacity: 1;
+            transition: 0.5s ease-in-out;
         }
     }
 }
