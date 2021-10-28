@@ -311,24 +311,18 @@ p {
   text-align: center;
   background-color: #F6F6F6;
   opacity: 1;
-  -webkit-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
   -webkit-box-shadow: 5px 5px 15px -3px rgba(53, 53, 53, 0.3);
           box-shadow: 5px 5px 15px -3px rgba(53, 53, 53, 0.3);
 }
 
-.button__fonction:hover {
+.button__fonction--violet {
   background-color: #e9ddf8;
   opacity: 1;
-  -webkit-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
 }
 
-.button__fonction:hover > .fonction__i {
+.button__fonction--violet > .fonction__i {
   color: #9356DC;
   opacity: 1;
-  -webkit-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
 }
 
 @media only screen and (min-width: 660px) {

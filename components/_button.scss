@@ -35,16 +35,13 @@
     text-align: center;
     background-color: $light-grey;
     opacity: 1;
-    transition: 0.5s ease-in-out;
     @include shadow;
-    &:hover {
+    &--violet {
         background-color: lighten($primary-color, 32%);
-        opacity: 1;
-        transition: 0.5s ease-in-out;
+        opacity: 1;        
         & >.fonction__i {
             color: $primary-color;
             opacity: 1;
-            transition: 0.5s ease-in-out;
         }
     }
 }
