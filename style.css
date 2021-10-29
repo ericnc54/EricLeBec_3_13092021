@@ -442,15 +442,6 @@ p {
   position: relative;
 }
 
-.fa-heart__page::before {
-  position: absolute;
-  right: 35px;
-}
-
-.fa-heart__page::after {
-  position: absolute;
-}
-
 .fa-heart:hover::after {
   opacity: 1;
 }

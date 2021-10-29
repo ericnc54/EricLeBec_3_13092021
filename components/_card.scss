@@ -67,13 +67,6 @@
         right: -30px;
         padding-top: 11px;
         position: relative;
-        &::before {
-            position: absolute;
-            right: 35px;
-        }
-        &::after {
-            position: absolute;
-        }        
     }     
     &:hover {
         &::after {
